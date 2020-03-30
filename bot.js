@@ -15,4 +15,15 @@ bot.on("message", m => {
   };
 });
 
+bot.on("message", message => {
+  let content = message.content;
+  let sender = message.author;
+  let senderid = message.author.id;
+  let channel = "684808969222619241";
+  
+  bot.channels.get("684808969222619241").send(`Fuck you <@${senderid}>`);
+  bot.channels.get("684808969222619241").send("Totaly hacker manned broooooooo")
+  
+})
+
 bot.login(process.env.FuckYouToo);
